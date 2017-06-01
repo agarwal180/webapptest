@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Index Page</title>
+<link rel="stylesheet" href="css/index.css">
+</head>
+<body style="background:linear-gradient(to left,rgba(100,50,20,1),rgba(100,50,20,0),rgba(100,50,20,1));">
+<div style="height:500px; margin-left:500px; background-color:#E0E0E0; margin-top:80px; border:2px solid black; width:300px; background:white;">
+    <div style="margin:30px; font-size:35px; font-family:'Palatino Linotype', 'Book Antiqua', Palatino, serif; color:#75BAFF;"> Online Exam</div> 
+    <form name="loginform" action="ExamLoginServlet" method="get">
+	<div align="left">
+		<table border="0" cellpadding="10" cellspacing="5px" width="400">
+           <tr> 
+              <td> <input type="email" id="email" size="30" name="txtemail" style="padding:5px;" 
+              placeholder="Email" class="login" /> </td>          
+           </tr>
+           <tr> 
+              <td> <input type="password" id="pwd" size="30" name="txtpsd" style="padding:5px;" 
+              placeholder="Password" class="login" /> </td>          
+           </tr>
+           <tr>
+           <td><div style="margin:0px;"><input type="checkbox" name="ch1" value="chk1"> Keep me signed in</div></td>
+           </tr>
+           <tr> 
+              <td><div> <input type="submit" class="buttons"  value="Login" name="loginbtn" style=" background-color:#00F;"/> </div></td>          
+           </tr>
+           </form>
+           <tr>
+           <td><div style="margin-left:5px;">I cannot access my account.</div></td>
+           </tr>    
+           <tr>
+           <td><div style="margin-left:5px;">Help</div></td>
+           </tr>
+           <tr>
+              <td><form name="loginform" action="ExamSignupServlet" method="get">
+              <div> 
+              <input type="submit" class="buttons" value="Create New Account" name="newaccountbtn"  style="background-color:#660099;" /> </div></td>
+              </form> 
+          </tr>
+		</table>	
+    </div>
+    </div>
+	</body>
+</html>
